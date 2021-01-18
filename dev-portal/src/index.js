@@ -35,7 +35,7 @@ loadFragments()
 // TODO: Feedback should be enabled if
 // the following is true && the current
 // user is not an administrator
-const feedbackEnabled = window.config.feedbackEnabled
+//const feedbackEnabled = window.config.feedbackEnabled
 
 export const RegisteredRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -108,7 +108,7 @@ class App extends React.Component {
             <Route path='/logout' render={() => { logout(); return <Redirect to='/' /> }} />
             <Route component={() => <h2>Page not found</h2>} />
           </Switch>
-          {feedbackEnabled && <Feedback />}
+         // {feedbackEnabled && <Feedback />}
           <AlertPopup />
         </>
       </BrowserRouter>
