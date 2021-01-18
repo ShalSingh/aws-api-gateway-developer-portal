@@ -108,7 +108,7 @@ class App extends React.Component {
             <Route path='/logout' render={() => { logout(); return <Redirect to='/' /> }} />
             <Route component={() => <h2>Page not found</h2>} />
           </Switch>
-         // {feedbackEnabled && <Feedback />}
+       
           <AlertPopup />
         </>
       </BrowserRouter>
